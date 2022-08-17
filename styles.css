@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #4885C5;
+    color: #DDECFA;
+    font-size: 2em;
+    font-family:Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display:grid;
+    gap: 10px;;
+    grid-template-columns: 2fr 3fr 2fr ;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-areas:
+        "header nav nav"
+        "main main aside"
+        "footer  footer aside";
+    
+}
+header{
+    grid-area: header;
+    justify-content:space-around;
+    
+}
+
+nav{
+    grid-area: nav; 
+    display:flex;
+    flex-wrap: wrap;
+    align-content: center;
+    column-gap:3rem;
+    justify-content: space-around;
+}
+
+footer{
+    grid-area: footer;
+    justify-content:space-around;
+}
+
+aside{
+    grid-area: aside;
+    padding: 1rem;
+}
+
+aside ul{
+    height: 100%;
+    display:grid;
+    grid-template-columns:repeat(5, 1fr) ;
+    row-gap: 2%;
+    grid-template-areas:
+    "one . two . three"
+    "four . five . six"
+    "seven . eight . NEIN"
+    "ten ten ten ten ten";
+    
+}
+
+h1{
+    padding-bottom:none;
+    justify-content:space-around;
+}
+
+h3 {
+    padding-bottom: none;
+}
+
+article{
+    grid-area: main;
+    max-height: 400px;   /*this one makes the scrollbar appear, but removes the corner radius */
+    overflow-y: auto;   
+}
+
+li.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width:fit-content;
+    padding: 3px;
+    font-size: 2.5rem;
+}
+a.button{
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    min-width:fit-content;
+    height:50%;
+    width:25%;
+    max-width:170px;
+    font-size: 1.8rem;
+}
+.card{
+    border-radius: 25px;
+    margin:0.5rem;
+    padding: 5px;
+    box-shadow: 10px -12px 23px -2px rgba(0,0,0,0.57);
+    background-color: rgb(70, 51, 1);
+    border: black solid 5px;
+    
+}
+li{
+    list-style: none;
+}
+.button{
+    border-radius:10px;
+    box-shadow: 10px -12px 23px -2px rgba(0,0,0,0.57);
+    color: black;
+    background-color:goldenrod;
+    border:rgb(28, 43, 14) solid 3px;
+
+}
+.button:hover{
+    background-color: yellow;
+    border: black solid 3px;
+    color: black;
+    box-shadow: 10px -12px 23px -2px rgba(255, 0, 0, 0.57);
+}
+.one{
+    grid-area: one;
+}
+.two{
+    grid-area: two;
+}
+.three{
+    grid-area: three;
+}
+.four{
+    grid-area: four;
+}
+.five{
+    grid-area: five;
+}
+.six{
+    grid-area: six;
+}
+.seven{
+    grid-area: seven;
+}
+.eight{
+    grid-area: eight;
+}
+.NEIN{
+    grid-area: NEIN;
+}
+.ten{
+    grid-area: ten;
+}
