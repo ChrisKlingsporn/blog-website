@@ -1,0 +1,22 @@
+@import url(//assets/blogtextstyle.css);
+@import url(//assets/blogcardstyle.css);
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 360px){ /*mobile*/
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 840px) and (min-width: 360px){ /*tablet and mobile-portrait*/
+    body{
+        display:grid;
+        grid-template-columns:3fr 1fr 2fr;
+    }
+}
+
