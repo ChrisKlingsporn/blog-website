@@ -1,6 +1,6 @@
-@import url(/assets/blogtextstyle.css);
-@import url(/assets/blogcardstyle.css);
-@import url(/assets/buttonstyles.css);
+@import url(/assets/styles/blogcardstyle.css);
+@import url(/assets/styles/blogtextstyle.css);
+@import url(/assets/styles/buttonstyles.css);
 
 *{
     padding: 0;
