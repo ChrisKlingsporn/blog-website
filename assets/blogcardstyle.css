@@ -13,9 +13,10 @@
     border: rgb(99, 92, 92) solid 5px;
     border-radius: 15px;
     border-top-right-radius: none;
-    padding: 15px;
 }
-
+.blogcardalt{
+    background-color: aquamarine;
+}
 
 
 

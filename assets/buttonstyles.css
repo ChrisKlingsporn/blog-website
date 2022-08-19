@@ -1,0 +1,34 @@
+button{
+    width:100%;
+    height:100%;
+    border-radius:25px;
+    background-color: rgb(73, 112, 73);
+ }
+ 
+ button:hover{
+    background-color: rgb(70, 100, 70);
+}
+
+ .button1{
+ grid-area: topleft;
+ }
+ 
+ .button2{
+ grid-area: topcenter;
+ }
+ 
+ .button3{
+ grid-area: topright;
+ }
+ 
+ .button4{
+ grid-area: bottomleft;
+ }
+ 
+ .button5{
+ grid-area: bottomcenter;
+ }
+ 
+ .button6{
+ grid-area: bottomright;
+ }
